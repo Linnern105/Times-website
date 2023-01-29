@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+    </style>
+
+</head>
+
+<body>    
+    <header class="d-flex flex-column align-items-center py-3 container-fluid bg-white bg-opacity-75" id="main-header">
+        <div class="container-fluid row align-items-center flex-nowrap" id="header-part">
+            <div class="col text-center">
+                <a href="" class="link-secondary">
+                    Subscribe
+                </a>
+            </div>
+            <div class="col text-center p-0">
+                <a href="" class="link h1 fw-bold">
+                    Times
+                </a>
+            </div>
+            <div class="col text-center d-flex flex-row justify-content-center align-items-center">
+                <a class="link-secondary" href="#" aria-label="Search">
+                    <svg xmlns="#" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="me-3" role="img" viewBox="0 0 24 24"><title></title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                </a>
+                
+                <a class="btn btn-outline-primary"> 
+                    Sign in
+                </a>
+            </div>
+        </div>
+        <hr class="text-black w-100">
+        <div class="btn-group border border-secondary overflow-hidden flex-wrap w-100" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-secondary">
+                About
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Help
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                U.S.
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                FAQ
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Politics
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Sports
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Culture
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Nature
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Science
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Travel
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Technology
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Business
+            </button>
+        </div>
+    </header>
+
+    <section id="main-content" class="container-fluid">
+
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade overflow-hidden mx-5 d-none d-xl-block" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active" style="height: 600px">
+                    <img src="war.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-start d-none d-md-block">
+                        <h5 class="fs-3">Russia inavded Ukraine</h5>
+                        <p class="lead fs-4">President of Russia Vladimir Putin declared war on Ukraine</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 600px">
+                    <img src="zelensky.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none text-start d-md-block">
+                        <h5 class="fs-3">Ukraine is not alone</h5>
+                        <p class="fs-4 lead">EU and NATO will give their support to Ukraine until Russia lose the war</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 600px">
+                    <img src="rusnya-sosat.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-start d-none d-md-block text-dark">
+                        <h5 class="fs-3">Kharkiv and Kherson counteroffensive</h5>
+                        <p class="lead fs-4">Ukrainian soldiers liberated Kharkiv and Kherson regions from Russia</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="news-cards" class="row mx-xl-5 mx-sm-0">
+
+            <div class="col-xl-6 col-sm-12 p-3">
+                <div class="card border border-dark-subtle p-0 shadow-sm">
+                    <div class="card-body d-flex flex-row p-0">
+                        <div class="card-text p-3">
+                            <div class="card-title">
+                                <h4 class="text-success">
+                                    Politics
+                                    <p class="badge bg-warning m-0">
+                                        NEW
+                                    </p>
+                                    <p class="badge bg-danger m-0">
+                                        BREAKING
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Russia invades Ukraine
+                                </h2>
+                            </div>
+                            <div class="card-text">
+                                <p class="lead">
+                                    FEB 24
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio eligendi nesciunt cum amet at deserunt quae ipsum est, repellendus facilis quasi quod in alias numquam aut nisi, blanditiis deleniti!
+                                </span>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn btn-outline-dark mt-3 stretched-link">
+                                    Continue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-img d-none d-md-block">
+                            <img src="war.jpeg " class="rounded-end img-fluid h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-sm-12 p-3">
+                <div class="card border border-dark-subtle p-0 shadow-sm">
+                    <div class="card-body d-flex flex-row p-0">
+                        <div class="card-text p-3">
+                            <div class="card-title">
+                                <h4 class="text-success">
+                                    Politics
+                                    <p class="badge bg-warning m-0">
+                                        NEW
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Ukraine not alone
+                                </h2>
+                            </div>
+                            <div class="card-text">
+                                <p class="lead">
+                                    FEB 26
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio eligendi nesciunt cum amet at deserunt quae ipsum est, repellendus facilis quasi quod in alias numquam aut nisi, blanditiis deleniti!
+                                </span>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn btn-outline-dark mt-3 stretched-link">
+                                    Continue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-img d-none d-md-block">
+                            <img src="zelensky.jpeg" class="rounded-end img-fluid h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-sm-12 p-3">
+                <div class="card border border-dark-subtle p-0 shadow-sm">
+                    <div class="card-body d-flex flex-row p-0">
+                        <div class="card-text p-3">
+                            <div class="card-title">
+                                <h4 class="text-success">
+                                    Politics
+                                    <p class="badge bg-warning m-0">
+                                        NEW
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Ukraine knocks out russians from Kiyv
+                                </h2>
+                            </div>
+                            <div class="card-text">
+                                <p class="lead">
+                                    MAR 30
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio eligendi nesciunt cum amet at deserunt quae ipsum est, repellendus facilis quasi quod in alias numquam aut nisi, blanditiis deleniti!
+                                </span>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn btn-outline-dark mt-3 stretched-link">
+                                    Continue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-img d-none d-md-block">
+                            <img src="kyiv.jpg" class="rounded-end img-fluid h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-sm-12 p-3">
+                <div class="card border border-dark-subtle p-0 shadow-sm">
+                    <div class="card-body d-flex flex-row p-0">
+                        <div class="card-text p-3">
+                            <div class="card-title">
+                                <h4 class="text-success">
+                                    Politics
+                                    <p class="badge bg-warning m-0">
+                                        NEW
+                                    </p>
+                                    <p class="badge bg-secondary m-0">
+                                        18+
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Russians massacred civilians in Bucha
+                                </h2>
+                            </div>
+                            <div class="card-text">
+                                <p class="lead">
+                                    APR 3
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio eligendi nesciunt cum amet at deserunt quae ipsum est, repellendus facilis quasi quod in alias numquam aut nisi, blanditiis deleniti!
+                                </span>
+                            </div>
+                            <div class="card-link">
+                                <a class="btn btn-outline-dark mt-3 stretched-link">
+                                    Continue
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-img d-none d-md-block">
+                            <img src="bucha.jpeg" class="rounded-end img-fluid h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main-info" class="row mx-xl-5 m-sm-0">
+
+            <div id="text" class="container-fluid col-lg-8">
+                <div>
+                    <p class="h2">
+                        Documentation
+                    </p>
+                </div>
+
+                <hr class="bg-black">
+
+                <div id="first-blog">
+                    <header>
+                        <div>
+                            <p class="h1">
+                                New version of Bootstrap
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Added by <a href="" class="link">Olexander Usenko</a> <label class="lead text-primary-emphasis fs-6">11:26</label> today
+                            </p>
+                        </div>
+                    </header>
+
+                    <div>
+                        <p class="h3">
+                            Text styling with
+                            <code class="fs-3">
+                                &lt;strong&gt;
+                            </code> 
+                            ,
+                            <code class="fs-3">
+                                &lt;em&gt;
+                            </code>
+                            ,
+                            <code class="fs-3">
+                                &lt;del&gt;
+                            </code>
+                            and others
+                        </p>
+
+                        <section class="ms-4">
+
+                            <div>
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, fugit nesciunt ipsa aperiam commodi consequatur distinctio explicabo velit, unde error dolorem iure architecto! Dolore commodi praesentium impedit, perspiciatis reiciendis omnis, quaerat eaque temporibus laudantium sapiente ab ipsum hic dolorem assumenda quas similique consequatur nam! Praesentium id amet ducimus commodi.
+                                </span>
+                            </div>
+                            <hr class="bg-black">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <em>Lorem ipsum dolor sit amet.</em> - <code>&lt;em&gt;</code>
+                                    </li>
+                                    <li>
+                                        <strong>Lorem ipsum dolor sit amet consectetur adipisicing.</strong> - <code>&lt;strong&gt;</code>
+                                    </li>
+                                    <li>
+                                        <cite>— Lorem ipsum dolor sit.</cite> - <code>&lt;cite&gt;</code>
+                                    </li>
+                                    <li>
+                                        <del>Lorem ipsum dolor sit amet.</del> - <code>&lt;del&gt;</code>
+                                    </li>
+                                    <li>
+                                        <abbr title="Hyper Text Markup Language">HTML</abbr> - <code>&lt;abbr&gt;</code> (requires attribute <code>title</code>)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</b> Quod consequuntur porro et dolore tag <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code> or tag <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code> amet quia quos numquam provident mollitia, sit eius hic. Unde nam saepe ipsum repudiandae porro illo consequuntur id, corrupti, sapiente, dolorum eius delectus explicabo ut vel ex.
+                                </span>
+                            </div>
+                        </section>
+                    </div>
+
+                <hr class="bg-black">
+
+                    <div>
+                        <p class="h3">
+                            Tag 
+                            <code class="fs-3">
+                                &lt;blockquote&gt;
+                            </code>
+                        </p>
+
+                        <section class="ms-4">
+                            <div>
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, fugit nesciunt ipsa aperiam commodi consequatur distinctio explicabo velit, unde error dolorem iure architecto! Dolore commodi praesentium impedit, perspiciatis reiciendis omnis, quaerat eaque temporibus laudantium sapiente ab ipsum hic dolorem assumenda quas similique consequatur nam! Praesentium id amet ducimus commodi.
+                                </span>
+                            </div>
+
+                            <hr class="bg-black">
+
+                            <div>
+                                <span>
+                                    <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</b> Quod consequuntur porro et dolore tag <code>&lt;blockquote&gt;</code> amet quia quos numquam provident mollitia, sit eius hic.
+
+                                    <blockquote class="fs-4 m-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </blockquote>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis voluptas illum, eius id eligendi pariatur placeat quibusdam sapiente voluptate?
+                                </span>
+                            </div>
+                        </section>
+                    </div>
+                    
+                </div>
+
+                <hr class="bg-black">
+
+                <div id="second-blog">
+                    <header>
+                        <div>
+                            <p class="h1">
+                                New version of Bootstrap
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Added by <a href="" class="link">Linnern</a> <label class="lead text-primary-emphasis fs-6">20:41</label> 24.07.2022
+                            </p>
+                        </div>
+                    </header>
+
+                    <div>
+                        <p class="h3">
+                            Tables
+                        </p>
+
+                        <section class="ms-4">
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, fugit nesciunt ipsa aperiam commodi consequatur distinctio explicabo velit, unde error dolorem iure architecto! Dolore commodi praesentium impedit, perspiciatis reiciendis omnis, quaerat eaque temporibus laudantium sapiente ab ipsum hic dolorem assumenda quas similique consequatur nam! Praesentium id amet ducimus commodi.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, at!
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsa, voluptatum corporis nostrum quibusdam cupiditate minima esse debitis tempore minus fuga eaque veniam incidunt. Ab possimus ullam corporis accusamus.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="h3">
+                                    Support
+                                </p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Browser
+                                            </th>
+                                            <th>
+                                                5.1
+                                            </th>
+                                            <th>
+                                                5.2
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Chrome
+                                            </td>
+                                            <td>
+                                                Yes
+                                            </td>
+                                            <td>
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Firefox
+                                            </td>
+                                            <td>
+                                                No
+                                            </td>
+                                            <td>
+                                                Yes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Edge
+                                            </td>
+                                            <td>
+                                                No
+                                            </td>
+                                            <td>
+                                                No
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </section>
+
+                        <div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="second-blog">
+                    <header>
+                        <div>
+                            <p class="h1">
+                                New version of Bootstrap
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Added by <a href="" class="link">Linnern</a> <label class="lead text-primary-emphasis fs-6">19.22</label> 22.02.2022
+                            </p>
+                        </div>
+                    </header>
+
+                    <div>
+                        <p class="h3">
+                            Browsers
+                        </p>
+
+                        <section class="ms-4">
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, fugit nesciunt ipsa aperiam commodi consequatur distinctio explicabo velit, unde error dolorem iure architecto! Dolore commodi praesentium impedit, perspiciatis reiciendis omnis, quaerat eaque temporibus laudantium sapiente ab ipsum hic dolorem assumenda quas similique consequatur nam! Praesentium id amet ducimus commodi.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, at!
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsa, voluptatum corporis nostrum quibusdam cupiditate minima esse debitis tempore minus fuga eaque veniam incidunt. Ab possimus ullam corporis accusamus.
+                                </p>
+                            </div>
+
+                            <p class="h3">
+                                Browsers
+                            </p>
+                            <div>
+                                <ul>
+                                    <li>Firefox</li>
+                                    <li>Chrome</li>
+                                    <li>Egde</li>
+                                    <li>Internet Explorer</li>
+                                    <li>Opera</li>
+                                </ul>
+                            </div>
+                            
+
+                        </section>
+                        <hr class="bg-black">
+                        <div>
+                            <span>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, eius sit. Possimus nesciunt eveniet ex iusto minus vel odio molestias fugiat commodi ullam velit cumque dolorum doloribus officia est illo asperiores eum, magni minima? Architecto consequuntur odio accusamus dolorum possimus?
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="aside" class="col-lg-4 mt-lg-0 mt-2">
+                <div class="bg-secondary-subtle p-2 position-sticky top-0 rounded">
+                    <div class="bg-danger-subtle rounded p-3">
+                        <p class="fw-bold">
+                            WARNING
+                        </p>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nulla debitis quas voluptatibus distinctio cupiditate est, asperiores dolore autem qui?
+                        </span>
+                    </div>
+                    <div class="mt-3 row">
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="" class="link">Archive 2022</a></li>
+                                <li><a href="" class="link">Archive 2021</a></li>
+                                <li><a href="" class="link">Archive 2020</a></li>
+                                <li><a href="" class="link">Archive 2019</a></li>
+                                <li><a href="" class="link">Archive 2018</a></li>
+                                <li><a href="" class="link">Archive 2017</a></li>
+                                <li><a href="" class="link">Archive 2016</a></li>
+                                <li><a href="" class="link">Archive 2015</a></li>
+                                <li><a href="" class="link">Archive 2014</a></li>
+                                <li><a href="" class="link">Archive 2013</a></li>
+                                <li><a href="" class="link">Archive 2012</a></li>
+                                <li><a href="" class="link">Archive 2011</a></li>
+                                <li><a href="" class="link">Archive 2010</a></li>
+                                <li><a href="" class="link">Archive 2009</a></li>
+                                <li><a href="" class="link">Archive 2008</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="" class="link">Instagram</a></li>
+                                <li><a href="" class="link">Facebook</a></li>
+                                <li><a href="" class="link">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="border-top mt-5 bg-secondary-subtle">
+        <div class="pt-5 text-center">
+            <p class="fs-5">
+                Copyright Times&copy 2023;
+            </p>
+        </div>
+
+        <div class="row container-fluid m-0">
+            <div class="col-lg-6 p-2">
+                <div class="bg-info-subtle rounded p-2">
+                    <div>
+                        <h4>
+                            How to send news to Times redaction?
+                        </h4>
+                    </div>
+
+                    <div>
+                        <p class="ms-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum adipisci inventore iusto at, tenetur laudantium voluptates consequuntur provident, recusandae suscipit. Quasi quia eum corporis praesentium, similique ratione quibusdam asperiores reprehenderit, magnam, totam rerum soluta!...
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <a class="btn btn-outline-dark">
+                            Read
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+                <div class="bg-danger-subtle rounded p-2">
+                    <div>
+                        <h4>
+                            How to send news to Times redaction?
+                        </h4>
+                    </div>
+
+                    <div>
+                        <p class="ms-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum adipisci inventore iusto at, tenetur laudantium voluptates consequuntur provident, recusandae suscipit. Quasi quia eum corporis praesentium, similique ratione quibusdam asperiores reprehenderit, magnam, totam rerum soluta!...
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <a class="btn btn-outline-dark">
+                            Read
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-6 p-2">
+                <div class="bg-warning-subtle rounded p-2">
+                    <div>
+                        <h4>
+                            How to send news to Times redaction?
+                        </h4>
+                    </div>
+
+                    <div>
+                        <p class="ms-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum adipisci inventore iusto at, tenetur laudantium voluptates consequuntur provident, recusandae suscipit. Quasi quia eum corporis praesentium, similique ratione quibusdam asperiores reprehenderit, magnam, totam rerum soluta!...
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <a class="btn btn-outline-dark">
+                            Read
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-6 p-2">
+                <div class="bg-success-subtle rounded p-2">
+                    <div>
+                        <h4>
+                            How to send news to Times redaction?
+                        </h4>
+                    </div>
+
+                    <div>
+                        <p class="ms-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum adipisci inventore iusto at, tenetur laudantium voluptates consequuntur provident, recusandae suscipit. Quasi quia eum corporis praesentium, similique ratione quibusdam asperiores reprehenderit, magnam, totam rerum soluta!...
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <a class="btn btn-outline-dark">
+                            Read
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="d-flex flex-row justify-content-center text-center">
+            <div class="p-3">
+                <p class="lead fs-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus odit nostrum commodi mollitia obcaecati. Officiis itaque delectus consectetur accusamus sit repellendus esse veniam laborum dolor, eius quam, assumenda maxime consequuntur quo laboriosam, recusandae nihil corporis quisquam. Reiciendis dolorum autem fuga?
+                </p>
+            </div>
+            
+        </div>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
